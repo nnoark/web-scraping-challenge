@@ -65,7 +65,7 @@ def mars_facts():
     mars_df = mars_df.set_index('Description')
     mars_df = mars_df.drop(index='Mars - Earth Comparison')
 
-    return mars_df.to_html()
+    return mars_df.to_html(classes="table table-striped")
 
 def mars_hemispheres(browser):
     url = 'https://marshemispheres.com/'
